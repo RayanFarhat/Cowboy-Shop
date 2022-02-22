@@ -1,0 +1,76 @@
+/* Responsive style */
+
+@media screen and (min-width: 550px) {
+  .rowContainer {
+    justify-content: space-between;
+  }
+
+  .orderList {
+    left: auto;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .toggleMenu {
+    display: none;
+  }
+
+  .profileContainer .userName {
+    display: block;
+  }
+
+  .bottomMenu {
+    left: 21%;
+    width: 40%;
+  }
+
+  .mainContainer {
+    width: calc(100% - 350px);
+    padding: 10px 30px;
+  }
+
+  .AdPic {
+    bottom: -13px;
+  }
+
+  .BannerContent h3 {
+    font-size: 24px;
+  }
+
+  .BannerContent p {
+    font-size: 16px;
+    margin: 12px 0px;
+    width: unset;
+  }
+
+  .BannerContent a {
+    font-size: 16px;
+  }
+
+  main {
+    display: flex;
+  }
+
+  .rightMenu {
+    position: fixed;
+    z-index: 1;
+    transform: translateX(0%);
+    top: unset;
+    padding: 20px 15px;
+  }
+
+  .itemCard {
+    width: 180px;
+    height: 200px;
+  }
+
+  .itemCard .imgBox {
+    top: -10px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .orderList {
+    left: auto;
+  }
+}

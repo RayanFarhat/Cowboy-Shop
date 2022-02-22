@@ -1,0 +1,120 @@
+/* Header Styles */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  height: 60px;
+  width: 100%;
+  background: #be8e60;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* top in the container */
+  z-index: 101;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  min-width: 40px;
+  width: 50px;
+}
+
+.shoppingCart {
+  /* to make his content on the top */
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.shoppingCart .cart {
+  font-size: 30px;
+  color: #373848;
+}
+
+.shoppingCart .cart_content {
+  min-width: 20px;
+  width: 20px;
+  min-height: 20px;
+  height: 20px;
+  background: #dddddd;
+  border-radius: 100%;
+  /* make content on top right of icon */
+  position: absolute;
+  top: -8px;
+  right: 0;
+  /* make content exactly in the center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shoppingCart .cart_content p {
+  font-weight: 500;
+  color: #be8e60;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+}
+
+.profileContainer .signout {
+  min-width: 60px;
+  max-width: 60px;
+  min-height: 30px;
+  max-height: 30px;
+  font-size: 12px;
+  font-weight: 300;
+  border-radius: 5px;
+  margin-right: 15px;
+  color: #fff;
+  background: #ac2c0d;
+  cursor: pointer;
+}
+
+.profileContainer .signout:hover {
+  background: #440808;
+}
+
+.profileContainer .imgBox {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 100vw;
+  background: #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* make image in circle */
+  overflow: hidden;
+}
+
+.profileContainer .imgBox .profilePic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileContainer .userName {
+  font-size: 16px;
+  margin-left: 8px;
+  font-weight: 500;
+  display: none;
+  align-items: center;
+}
+
+.toggleMenu {
+  transform: rotate(-90deg);
+}
+
+.toggleMenu .toggleIcon {
+  color: #dddddd;
+  font-size: 30px;
+}
+
+header img {
+  color: #fff;
+}

@@ -1,0 +1,102 @@
+/* styles for the main components in the app, shop, signIn functions */
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: #dddddd;
+  overflow-x: hidden;
+}
+
+.App::-webkit-scrollbar {
+  display: none;
+}
+
+.Shop {
+  width: 100vw;
+  height: 100vh;
+  background: #dddddd;
+  overflow-x: hidden;
+}
+
+.Shop::-webkit-scrollbar {
+  display: none;
+}
+
+/* Main Section Styles */
+
+main {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  margin-top: 60px;
+}
+
+.mainContainer {
+  width: 100%;
+  height: auto;
+  background: #dddddd;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+/* items container */
+
+.ProductContainer {
+  width: 100%;
+  padding: 10px 0px;
+  margin-bottom: 50px;
+}
+
+/* right menu */
+
+.rightMenu {
+  width: 350px;
+  height: calc(100% - 60px);
+  background: #dddddd;
+  position: fixed;
+  right: 0;
+  top: 60px;
+  z-index: 105;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+  /* make the menu disappear */
+  transform: translateX(200%);
+}
+
+.rightMenu.active {
+  /* make the menu appear */
+  transform: translateX(0%);
+}
+
+.signIn {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+.signInbutton {
+  width: 350px;
+  height: 80px;
+  position: relative;
+  background: #29f500;
+  font-size: 30px;
+  margin-top: 60px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: #000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.signInbutton:hover {
+  background: #014101;
+  color: #eeeeee;
+}

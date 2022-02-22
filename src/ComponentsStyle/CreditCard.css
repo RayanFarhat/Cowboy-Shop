@@ -1,0 +1,105 @@
+/* credit card style */
+
+.rightMenu .creditCardContainer {
+  width: 100%;
+  height: auto;
+}
+
+.cardGroup {
+  background: #a57a52;
+  border-radius: 10px;
+  height: 180px;
+  margin: 25px;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+  width: 300px;
+}
+
+.shine {
+  background: rgba(255, 255, 255, 0.05);
+  left: 190px;
+  top: 0;
+  margin: 0 7px 0 0;
+  padding: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: skew(50deg);
+  -moz-transform: skew(50deg);
+  -ms-transform: skew(50deg);
+  -o-transform: skew(50deg);
+  transform: skew(50deg);
+}
+
+.shine-layer-two {
+  -webkit-transform: skew(80deg);
+  -moz-transform: skew(80deg);
+  -ms-transform: skew(80deg);
+  -o-transform: skew(80deg);
+  transform: skew(80deg);
+}
+
+h2 {
+  font: 18px Anaheim;
+  color: #fff;
+  padding-bottom: 0px;
+  text-align: right;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+.number,
+.date {
+  margin-bottom: 5px;
+}
+
+.provider {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  width: 35px;
+  height: 22px;
+}
+
+input {
+  background: #ececec;
+  border: 0;
+  border-radius: 5px;
+  font: 15px Inconsolata, sans-serif;
+  color: #303030;
+  margin: 0 1px 1px 0;
+  padding: 4px 5px;
+  text-align: center;
+  width: 24%;
+  -moz-box-shadow: 1px 1px 0px 1px #0e306e;
+  -webkit-box-shadow: 1px 1px 0px 1px #0e306e;
+  box-shadow: 1px 1px 0px 1px #0e306e;
+  position: relative;
+  z-index: 10;
+}
+
+.date input {
+  margin-right: 10px;
+}
+
+.valid {
+  position: relative;
+  margin-right: 5px;
+  width: 20px;
+}
+
+.full-name {
+  width: 100%;
+}
+.card-number {
+  width: 100%;
+}
+
+.instructions {
+  letter-spacing: 1px;
+  font: 10px Anaheim, sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+}

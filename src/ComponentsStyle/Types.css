@@ -1,0 +1,118 @@
+/* types Style */
+
+.subMenuContainer {
+  width: 100%;
+}
+
+.subMenuContainer h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2a2b3c;
+  margin-left: 10px;
+}
+
+.rowContainer {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 10px 0px;
+  padding: 10px 0px;
+}
+
+.rowContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.typeCard {
+  width: 80px;
+  min-width: 80px;
+  height: 100px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.typeCard:hover,
+.typeCard.active {
+  background: #be8e60;
+}
+
+.typeCard .imgBox {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 100vw;
+  background: #be8e60;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.typeCard:hover .imgBox,
+.typeCard.active .imgBox {
+  background: #fff;
+}
+
+.typeCard .imgBox img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.typeCard:hover .imgBox img,
+.typeCard.active .imgBox img {
+  width: 80%;
+  height: 80%;
+  transition: 0.5s;
+}
+
+.typeCard h3 {
+  color: #be8e60;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.typeCard:hover h3,
+.typeCard.active h3 {
+  color: #faf9fb;
+}
+
+.typeCard .loadMenu {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #be8e60;
+  transition: 0.5s;
+}
+
+.typeCard:hover .loadMenu,
+.typeCard.active .loadMenu {
+  background: #faf9fb;
+}
+
+.typeCard .loadMenu .MuiSvgIcon-root {
+  font-size: 14px;
+  color: #faf9fb;
+}
+
+.typeCard:hover .loadMenu .MuiSvgIcon-root,
+.typeCard.active .loadMenu .MuiSvgIcon-root {
+  color: #be8e60;
+}

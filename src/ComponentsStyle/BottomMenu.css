@@ -1,0 +1,118 @@
+/* Bottom Menu Styles */
+
+.bottomMenu {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #be8e60;
+  border-radius: 25px 25px 0px 0px;
+  /* top in the container */
+  z-index: 101;
+}
+
+.bottomMenu ul {
+  display: flex;
+}
+
+.bottomMenu ul li {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  z-index: 1;
+}
+
+.bottomMenu ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 500;
+}
+
+.bottomMenu ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 70px;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.bottomMenu ul li a .icon .MuiSvgIcon-root {
+  /* this is specific class for the icons */
+  font-size: 26px;
+  color: #444444;
+}
+
+.bottomMenu ul li.active a .icon {
+  transform: translateY(-26px);
+}
+
+.bottomMenu ul li.active a .icon .MuiSvgIcon-root {
+  color: #ffffff;
+  /* animation */
+  transition: 0.5s;
+}
+
+.indicator {
+  /* for the selected icon */
+  position: absolute;
+  height: 50px;
+  width: 150px;
+  background: #be8e60;
+  border-radius: 100vw;
+  top: -50%;
+  border: 6px solid #dddddd;
+  transition: 0.5s;
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border-top-right-radius: 18px;
+  box-shadow: 0px -10px 0px 0px #dddddd;
+}
+
+.indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border-top-left-radius: 18px;
+  box-shadow: 0px -10px 0px 0px #dddddd;
+}
+
+.bottomMenu ul li:nth-child(1).active ~ .indicator {
+  /* move the indicator to acative icon */
+  transform: translateX(calc(0));
+}
+
+.bottomMenu ul li:nth-child(2).active ~ .indicator {
+  /* move the indicator to acative icon */
+  transform: translateX(calc(150px));
+}
+
+.bottomMenu ul li:nth-child(1).active ~ .orderList {
+  /* move the indicator to acative icon */
+  transform: translateY(200%);
+}
+
+.bottomMenu ul li:nth-child(2).active ~ .orderList {
+  /* move the indicator to acative icon */
+  transform: translateY(0%);
+}

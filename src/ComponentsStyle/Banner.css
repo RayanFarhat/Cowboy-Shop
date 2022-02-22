@@ -1,0 +1,47 @@
+/* Top Banner Style */
+
+.banner {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px;
+  background: url("https://firebasestorage.googleapis.com/v0/b/ryanshop-98e7a.appspot.com/o/wallpaper.jpg?alt=media&token=12e3b024-8f5d-48fc-9ab3-ff12bd530299")
+    no-repeat center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.AdPic {
+  position: absolute;
+  right: -60px;
+  bottom: -10px;
+  width: 180px;
+}
+
+.BannerContent {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.BannerContent h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #970808;
+}
+
+.BannerContent p {
+  font-size: 12px;
+  width: 200px;
+  color: #fff;
+  margin: 5px 0px;
+}
+
+.BannerContent p span {
+  color: #ac1818;
+  font-weight: 800;
+}

@@ -1,0 +1,123 @@
+/*  Items Style */
+
+.itemContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* for responsive design to add more items when the screen get bigger */
+  flex-wrap: wrap;
+}
+
+.itemCard {
+  width: 160px;
+  height: 180px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 10px 0px;
+}
+
+.itemCard .imgBox {
+  position: absolute;
+  top: 0px;
+  width: 120px;
+  height: 120px;
+  border-radius: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemCard .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.itemCard .imgBox .itemImg {
+  width: 60%;
+  position: absolute;
+  top: 0;
+}
+
+.itemCard .itemContent {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+.itemCard .itemContent .itemName {
+  font-size: 16px;
+}
+
+.itemCard .itemContent .descriptionButton {
+  width: 100px;
+  height: 20px;
+  font-size: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #be8e60;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.itemCard .itemContent .descriptionButton:before {
+  content: "";
+  background: #111;
+  position: absolute;
+  color: #fff;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.itemCard .itemContent .descriptionButton:hover:before {
+  opacity: 1;
+}
+
+.itemCard .itemContent .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemCard .itemContent .bottom .price {
+  font-size: 16px;
+}
+
+.itemCard .itemContent .bottom .price span {
+  color: #be8e60;
+  font-size: 12px;
+}
+.itemCard .itemContent .bottom .addtoCart {
+  background: #be8e60;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.itemCard .itemContent .bottom .addtoCart .MuiSvgIcon-root {
+  color: #faf9fb;
+  font-size: 16px;
+}

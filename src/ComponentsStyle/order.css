@@ -1,0 +1,89 @@
+/* order list style */
+
+.orderList {
+  width: 375px;
+  height: calc(100% - 140px);
+  border: 2px;
+  border-radius: 10px;
+  background: #bbbbbb;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top: 60px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  box-shadow: 10px 10px 20px rgba(228, 147, 72, 0.1);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* make the menu disappear */
+  transform: translateY(200%);
+}
+
+.orderList h3 {
+  margin-bottom: 20px;
+}
+
+.orderList h2 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 200px;
+}
+
+.order {
+  display: flex;
+  width: 350px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px 0px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.order h4 {
+  margin-right: 30px;
+}
+.order .details {
+  min-width: 80px;
+  max-width: 80px;
+  min-height: 40px;
+  max-height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 10px;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  background: #be8e60;
+  cursor: pointer;
+}
+
+.details:hover {
+  color: #d8c9b6;
+  background: #664e38;
+}
+
+.order .delete {
+  min-width: 80px;
+  max-width: 80px;
+  min-height: 40px;
+  max-height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  background: #ac2c0d;
+  cursor: pointer;
+}
+
+.delete:hover {
+  color: #d8c9b6;
+  background: #440808;
+}
