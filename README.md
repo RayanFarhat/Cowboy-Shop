@@ -9,7 +9,7 @@ The website is responsive for all screen sizes.
 ## The Goal:
 This is my first web development project, i did it for practicing.
 ## Development:
-The website is built mainly with [ReactJS](https://reactjs.org/) with Redux for frontend and [Firebase](https://firebase.google.com/) tools for backend. If you are not familiar with them, I suggest checking out their documentation.
+The website is built mainly with [ReactJS](https://reactjs.org/) with [Redux](https://redux.js.org/) for frontend and [Firebase](https://firebase.google.com/) tools for backend. If you are not familiar with them, I suggest checking out their documentation.
 #### Install:
 First, I started Reacjs project with this command:<br/>
 ```
